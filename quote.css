@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Eczar:400,500,600);
+
+body {
+	background-color: #add8e6;
+	color: #6994b2;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 90vh;
+}
+
+#quote-box {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: white;
+	margin-top: 20vh;
+	text-align: center;
+	width: 500px;
+	border-radius: 20px;
+	padding: 30px;
+	font-family: 'Eczar';
+}
+
+#text-box {
+	height: 180px;
+	width: 100%;
+	font-size: 1.2em;
+}
+
+#text {
+	margin: 10px;
+
+}
+
+#author {
+	margin: 10px;
+	margin-top: 30px;
+	align-self: flex-end;
+	text-align: right;
+	font-weight: 500;
+}
+
+.buttons {
+	margin-top: 30px;
+	width: 500px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+button {
+	font-family: 'Eczar';
+}
+
+.button {
+	display: inline-block;
+	box-sizing: border-box;
+	margin-top: 25px;
+	border: none;
+	border-radius: 10px;
+	padding: 20px;
+	background-color: #6994b2;
+	color: white;
+}
+
+#new-quote {
+	font-size: 15px;
+	font-weight: bold;
+	line-height: 1;
+	letter-spacing: 1px;
+}
+
+#tweet-quote {
+	padding: 15px;
+	font-weight: bold;
+	text-decoration: none;
+	font-size: 15px;
+	line-height: 25px;
+	letter-spacing: 1px;
+}
+
+.button:hover {
+	background-color: #add8e6;
+	color: #6994b2;
+	cursor: pointer;
+	box-shadow: 1px 1px 2px 2px #6994b2;
+}
+
+footer {
+	color: hsl(205, 32%, 55%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+hr {
+	border: 0;
+	height: 1px; 
+	width: 90%;
+	background-image: linear-gradient(to right, hsla(205, 32%, 55%, 0), hsla(205, 32%, 55%, 0.75), hsla(205, 32%, 55%, 0));
+}
+
+@media (max-width: 600px) {
+	#wrapper {
+		height: auto;
+	}
+	#quote-box {
+		margin-top: 20vh;
+		width: 80%;
+		padding: 10px;
+	}
+	#text-box {
+		height: auto;
+	}
+	.buttons {
+		margin-top: 10px;
+		width: 80%;
+	}
+	footer {
+		margin-top: 25px;
+	}
+}
+
+@media (max-width: 350px) {
+	.buttons {
+		flex-direction: column-reverse;
+	}
+	.button {
+		margin-top: 5px;
+	}
+}
